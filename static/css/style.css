@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../images/background-blue-grad.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #66e0ff;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    border: 2px solid #66e0ff;
+    border-radius: 25px;
+    background: transparent;
+    color: #66e0ff;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+}
+
+.cta-button.highlight {
+    background: #66e0ff;
+    color: #000;
+}
+
+.cta-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    width: 200px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tagline {
+    font-size: 36px;
+    margin: 20px 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.subtext {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.cta-buttons {
+    margin-top: 30px;
+}
+
+.primary-button, .secondary-button {
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.primary-button {
+    background: #66e0ff;
+    color: #000;
+    border: 2px solid #66e0ff;
+}
+
+.primary-button:hover {
+    background: transparent;
+    color: #66e0ff;
+}
+
+.secondary-button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.secondary-button:hover {
+    background: #fff;
+    color: #000;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Add animations for other sections */
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.feature {
+    text-align: center;
+    padding: 20px;
+}
+
+.feature h3 {
+    margin-top: 15px;
+    color: #66e0ff;
+}
+
+.testimonial-section {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial {
+    padding: 20px;
+    font-style: italic;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    margin: 0 15px;
+    color: #66e0ff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media .icon {
+    margin: 0 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-media .icon:hover {
+    transform: scale(1.2);
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    margin-right: 10px;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #66e0ff;
+    color: #000;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    background: #fff;
+}
